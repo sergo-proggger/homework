@@ -1,0 +1,33 @@
+.text {
+    font-family: "Open Sans", "Arial", "Tahoma", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.text2 {
+    font-family: "Open Sans", "Arial", "Tahoma", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 30px;
+    text-decoration: line-through;
+}
+
+.text3 {
+    font-size: 30px ;
+    text-align: center;
+
+}
+
+.text4 {
+    word-spacing: 100px;
+    text-decoration-line: overline;
+    text-decoration-style: wavy ;
+}
+
+.text5 {
+    letter-spacing: 5px;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
