@@ -1,0 +1,26 @@
+div {
+    background: red;
+    width: 150px;
+    height: 150px;
+    line-height: normal;
+    border: 40px double #000;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow:  20px 10px 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+main {
+    color: aqua;
+}
+
+span {
+    color: azure;
+    line-height: normal;
+}
+
+body {
+    background-color: aqua;
+    font-size: 40px;
+}
