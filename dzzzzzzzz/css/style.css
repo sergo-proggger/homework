@@ -20,7 +20,8 @@ span {
     line-height: normal;
 }
 
-body {
+.block {
     background-color: aqua;
-    font-size: 40px;
+    width: 1000px;
+    height: 600px;
 }
