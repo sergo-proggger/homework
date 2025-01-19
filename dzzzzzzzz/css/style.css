@@ -1,17 +1,5 @@
-div {
-    background: red;
-    width: 150px;
-    height: 150px;
-    line-height: normal;
-    border: 40px double #000;
-    text-align: center;
-    border-radius: 40px;
-    box-shadow:  20px 10px 10px;
-    display: inline-block;
-    overflow: auto;
-}
 
-main {
+h2 {
     color: aqua;
 }
 
@@ -21,7 +9,22 @@ span {
 }
 
 .block {
-    background-color: aqua;
-    width: 1000px;
-    height: 600px;
+    border-radius: 40px;
+    border: 20px dotted #36b625;
+    overflow: auto;
+    height: 1000px;
+    background: #301675;
+}
+
+.block-1 {
+    border-radius: 30px;
+    border: 15px solid #301675;
+    background: red;
+    height: 300px;
+    width: 200px;
+    line-height: normal;
+    border: 40px double #000;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
 }
