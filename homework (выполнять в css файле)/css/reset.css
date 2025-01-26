@@ -16,4 +16,3 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 a{color:inherit;}
-.area__place--for-red{transform:translate(440px,590px);}.area__place--for-green{transform:translate(200px,-100px)rotate(115deg);}.area__place--for-blue{transform:translate(630px,-300px)scale(-2);}
