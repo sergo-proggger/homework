@@ -2,7 +2,7 @@ const assistant = {
     name: 'Sergey',
     age: 22,
     greet: function(userName) {
-        return Hello ${userName}; 
+        return `Hello ${userName}`; 
     }
 };
 
@@ -16,10 +16,10 @@ const users = [
 
 let simpleUsers = 0;
 
-for (let i = 1; i < users.length; i++) {
+for (let i = 0; i < users.length; i++) {
     if (users[i].role !== "admin") {
-        simpleUserCount++;
+        simpleUsers++;
     }
 }
 
-console.log(простые: ${simpleUsers});
+console.log(simpleUsers);
