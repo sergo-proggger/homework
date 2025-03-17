@@ -37,13 +37,12 @@ body {
     position: relative;
 }
 .header__img {
-    position: fixed;
-    width: 976.57px;
+    position: absolute;
+    width: 100%;
     height: 861.84px;
-    left: 803px;
-    right: -3px;
-    top: -180px;
-    bottom: 361.74px;
+    transform: translate(642px, -327px);
+    right: 0px;
+    top: 0px;
     z-index: 1;
 }
 .header__top {
@@ -102,6 +101,7 @@ body {
 .hero__inner {
     display: flex;
     align-items: center;
+    position: relative;
     gap: 80px;
 }
 .hero__content {
@@ -224,6 +224,7 @@ body {
     text-align: center;
 }
 .hero__shoes {
+    position: relative;
 }
 .hero__discount {
     position: absolute;
@@ -247,16 +248,20 @@ body {
 }
 .hero__img img {
     position: absolute;
-    top: 167px;
+    transform: translate(10px, 10px);
+    width: 100px;
+    height: auto;
+    right: 0;
+    top: 0px;
     z-index: 3;
 }
 .hero__shoes-types {
     display: flex;
     align-items: center;
     position: absolute;
-    left: 1038px;
-    right: 144px;
-    top: 714px;
+    transform: translate(475px, 178px);
+    right: 0px;
+    top: 0px;
     max-width: 416px;
     gap: 35px;
     margin-bottom: 86px;
