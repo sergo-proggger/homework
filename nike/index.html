@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="body">
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="home">
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-inner">
@@ -20,22 +19,22 @@
                         <nav class="nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#">
+                                    <a class="nav__link" href="#home">
                                         Home
                                     </a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#">
+                                    <a class="nav__link" href="#products">
                                         Product
                                     </a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#">
+                                    <a class="nav__link" href="#about">
                                         About
                                     </a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#">
+                                    <a class="nav__link" href="#review">
                                         Review
                                     </a>
                                 </li>
@@ -50,7 +49,6 @@
                     </div>
                 </div>
             </div>
-
             <section class="header__hero hero">
                 <div class="container">
                     <div class="hero__inner">
@@ -128,8 +126,470 @@
                 </div>
             </section>
         </header>
+        
+        <main class="main">
+            <section class="products" id="products">
+                <div class="container">
+                    <div class="products__inner">
+                        <div class="products__info">
+                            <h2 class="products__title">
+                                Our Latest Product
+                            </h2>
+                            <p class="products__text">
+                                Now that you have a ready strategy to move forward, it’s time to come up with some ideas.
+                            </p>
+                        </div>
+                        <div class="products__list">
+                            <div class="products__item">
+                                <div class="products__img">
+                                    <img src="img/content/1-st shoe.png" alt="">
+                                </div>
+                                <p class="products__item-name">
+                                    Aliquam lobortis
+                                </p>
+                                <div class="products__rating">
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star shadow.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="products__item-price">
+                                    $75.00 – $85.00
+                                </p>
+                                <div class="button__info">
+                                    <a href="#" class="products__button">
+                                        <p class="products__button-text">
+                                            SHOP NOW
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__img">
+                                    <img src="img/content/2-nd shoe.png" alt="">
+                                </div>
+                                <p class="products__item-name">
+                                    Fuscle Aliquam
+                                </p>
+                                <div class="products__rating">
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star shadow.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="products__item-price">
+                                    $65.00 – $75.00
+                                </p>
+                                <div class="button__info">
+                                    <a href="#" class="products__button">
+                                        <p class="products__button-text">
+                                            SHOP NOW
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__img">
+                                    <img src="img/content/3-rd shoe.png" alt="">
+                                </div>
+                                <p class="products__item-name">
+                                    AIR SUPERIORITY
+                                </p>
+                                <div class="products__rating">
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star gold.png" alt="">
+                                    </div>
+                                    <div class="products__rating-star">
+                                        <img src="img/content/Star shadow.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="products__item-price">
+                                    $35.00 – $45.00
+                                </p>
+                                <div class="button__info">
+                                    <a href="#" class="products__button">
+                                        <p class="products__button-text">
+                                            SHOP NOW
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="media" id="about">
+                <div class="container">
+                    <div class="media__inner">
+                        <div class="media__img">
+                            <img src="img/decor/View.png" alt="">
+                        </div>
+                        <div class="media__text">
+                            <h2 class="media__title">
+                                Telling your story with videos
+                            </h2>
+                            <p class="media__info">
+                                Now that you have a ready strategy to move forward, it’s time to come up with some ideas.
+                            </p>
+                        </div>
+                        <div class="video-container">
+                            <video id="myVideo" src="img/decor/vidos.mp4" preload="metadata" poster="img/decor/bg-video.jpeg"></video>
+                            <div class="play-button" id="playButton"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="train">
+                <div class="container">
+                    <div class="train__inner">
+                        <div class="train__img">
+                            <img src="img/content/man.png" alt="">
+                        </div>
+                        <div class="train__info">
+                            <t2 class="train__title">
+                                The best shoes for the best people.
+                            </t2>
+                            <div class="train__list">
+                                <div class="train__item">
+                                    <div class="train__item-img">
+                                        <img src="img/decor/nike-train.png" alt="">
+                                    </div>
+                                    <p class="train__text">
+                                        Now that you have a ready strategy to move forward, it’s time to come up with some ideas.
+                                    </p>
+                                </div>
+                                <div class="train__item">
+                                    <div class="train__item-img">
+                                        <img src="img/decor/nike-train.png" alt="">
+                                    </div>
+                                    <p class="train__text">
+                                        Now that you have a ready strategy to move forward, it’s time to come up with some ideas.
+                                    </p>
+                                </div>
+                                <div class="train__item">
+                                    <div class="train__item-img">
+                                        <img src="img/decor/nike-train.png" alt="">
+                                    </div>
+                                    <p class="train__text">
+                                        Now that you have a ready strategy to move forward, it’s time to come up with some ideas.
+                                    </p>
+                                </div>
+                                <div class="train__item">
+                                    <div class="train__item-img">
+                                        <img src="img/decor/nike-train.png" alt="">
+                                    </div>
+                                    <p class="train__text">
+                                        Now that you have a ready strategy to move forward, it’s time to come up with some ideas.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="train__img-bg">
+                                <img src="img/decor/nike-bg.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials" id="review">
+                <div class="container">
+                    <div class="testimonials__inner">
+                        <div class="tesimonials__buttons">
+                            <div class="testimonials__nav">
+                                <button class="testimonials__prev" type="button">
+                                    <svg width="34.006348" height="19.982422" viewBox="0 0 34.0063 19.9824" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Arrow 2" d="M5.12 11.49L11.05 17.41C11.64 18 11.64 18.94 11.05 19.53C10.45 20.13 9.52 20.13 8.93 19.53L0.44 11.05C-0.15 10.45 -0.15 9.52 0.44 8.93L8.93 0.44C9.52 -0.15 10.45 -0.15 11.05 0.44C11.64 1.03 11.64 1.97 11.05 2.56L5.12 8.49L34 8.49L34 11.49L5.12 11.49Z" fill="#5CBE3A" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                                <button class="testimonials__next"  type="button">
+                                    <svg width="34.006348" height="19.982422" viewBox="0 0 34.0063 19.9824" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <desc>
+                                            Created with Pixso.
+                                        </desc>
+                                        <path id="Arrow 3" d="M28.87 11.49L22.95 17.41C22.35 18 22.35 18.94 22.95 19.53C23.54 20.13 24.48 20.13 25.07 19.53L33.56 11.05C34.15 10.45 34.15 9.52 33.56 8.93L25.07 0.44C24.48 -0.15 23.54 -0.15 22.95 0.44C22.35 1.03 22.35 1.97 22.95 2.56L28.87 8.49L0 8.49L0 11.49L28.87 11.49Z" fill="#5CBE3A" fill-opacity="1" fill-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <a href="#" class="testimonials__button">
+                                <p class="testimonials__button-text">
+                                    More Reciew
+                                </p>
+                            </a>
+                            <div class="testimonials__pagination"></div>
+                        </div>
+                        <div class="testimonials__slider swiper">
+                            <div class="testimonials__wrapper swiper-wrapper">
+                                <div class="testimonials__slide swiper-slide" id="slider">
+                                    <h2 class="testimonials__title">
+                                        Greatest Reviews
+                                    </h2>
+                                    <div class="testimonials__user">
+                                        <div class="testimonials__img">
+                                            <img src="img/content/testim.png" alt="">
+                                        </div>
+                                        <div class="testimonials__text">
+                                            <h3 class="testimonials__name">
+                                                Shahriar Sohag
+                                            </h3>
+                                            <p class="testimonials__info">
+                                                Now that you have a ready strategy to move forward, it’s time to come up with some ideas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__review">
+                                        <div class="testimonials__rating">
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star shadow.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="testimonials__main">
+                                            UI Designer
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__line">
+                                        <img src="img/decor/Line 1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="testimonials__slide swiper-slide" id="slider">
+                                    <h2 class="testimonials__title">
+                                        Greatest Reviews
+                                    </h2>
+                                    <div class="testimonials__user">
+                                        <div class="testimonials__img">
+                                            <img src="img/content/testim.png" alt="">
+                                        </div>
+                                        <div class="testimonials__text">
+                                            <h3 class="testimonials__name">
+                                                Shahriar Sohag
+                                            </h3>
+                                            <p class="testimonials__info">
+                                                Now that you have a ready strategy to move forward, it’s time to come up with some ideas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__review">
+                                        <div class="testimonials__rating">
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star shadow.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="testimonials__main">
+                                            UI Designer
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__line">
+                                        <img src="img/decor/Line 1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="testimonials__slide swiper-slide" id="slider">
+                                    <div class="testimonials__title">
+                                        <h2 class="testimonials__title-word">
+                                            Greatest Reviews
+                                        </h2>
+                                    </div>
+                                    <div class="testimonials__user">
+                                        <div class="testimonials__img">
+                                            <img src="img/content/testim.png" alt="">
+                                        </div>
+                                        <div class="testimonials__text">
+                                            <h3 class="testimonials__name">
+                                                Shahriar Sohag
+                                            </h3>
+                                            <p class="testimonials__info">
+                                                Now that you have a ready strategy to move forward, it’s time to come up with some ideas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__review">
+                                        <div class="testimonials__rating">
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star gold.png" alt="">
+                                            </div>
+                                            <div class="testimonials__rating-star">
+                                                <img src="img/content/Star shadow.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="testimonials__main">
+                                            UI Designer
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__line">
+                                        <img src="img/decor/Line 1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__bg">
+                            <img src="img/decor/bg-testim.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="review">
+                <div class="container">
+                    <div class="review__inner">
+                        <div class="review__title">
+                            Get Started Now
+                        </div>
+                        <div class="review__text">
+                            Now that you have a ready strategy to move forward, it’s time to come up with some ideas.
+                        </div>
+                        <a class="review__button button" href="#">
+                            SUBSCRIBE
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <img src="img/icons/nike-bl.svg" alt="Logo Nike Company">
+                    </div>
+                    <nav class="footer__block">
+                        <ul class="footer__block-list">
+                            <li class="footer__block-item">
+                                <a class="footer__block-link" href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="footer__block-item">
+                                <a class="footer__block-link" href="#">
+                                    Product
+                                </a>
+                            </li>
+                            <li class="footer__block-item">
+                                <a class="footer__block-link" href="#">
+                                    About
+                                </a>
+                            </li>
+                            <li class="footer__block-item">
+                                <a class="footer__block-link" href="#">
+                                    Review
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="socials">
+                        <div class="socials__text">
+                            <p class="s-text">
+                                Follow Us :
+                            </p>
+                        </div>
+                        <ul class="socials__list">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg width="8.863281" height="17.545898" viewBox="0 0 8.86328 17.5459" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                            Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="XMLID 835" d="M0.28 9.34L2.2 9.34L2.2 17.26C2.2 17.41 2.33 17.54 2.48 17.54L5.75 17.54C5.9 17.54 6.03 17.41 6.03 17.26L6.03 9.38L8.24 9.38C8.38 9.38 8.5 9.27 8.52 9.13L8.86 6.21C8.87 6.13 8.84 6.05 8.79 5.99C8.73 5.93 8.66 5.9 8.58 5.9L6.03 5.9L6.03 4.07C6.03 3.52 6.33 3.24 6.91 3.24C6.99 3.24 8.58 3.24 8.58 3.24C8.73 3.24 8.86 3.11 8.86 2.96L8.86 0.28C8.86 0.12 8.73 0 8.58 0L6.28 0C6.26 0 6.23 0 6.18 0C5.78 0 4.39 0.07 3.3 1.08C2.09 2.19 2.26 3.53 2.3 3.76L2.3 5.9L0.28 5.9C0.12 5.9 0 6.02 0 6.18L0 9.06C0 9.21 0.12 9.34 0.28 9.34Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg width="19.821777" height="16.105469" viewBox="0 0 19.8218 16.1055" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                            Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Vector" d="M19.82 1.9C19.08 2.22 18.29 2.44 17.48 2.54C18.32 2.04 18.96 1.25 19.26 0.3C18.48 0.77 17.61 1.1 16.69 1.28C15.94 0.49 14.88 0 13.72 0C11.47 0 9.66 1.82 9.66 4.06C9.66 4.38 9.68 4.69 9.75 4.99C6.37 4.82 3.38 3.2 1.37 0.74C1.02 1.34 0.82 2.04 0.82 2.79C0.82 4.2 1.54 5.44 2.62 6.17C1.97 6.15 1.33 5.96 0.79 5.67C0.79 5.68 0.79 5.7 0.79 5.71C0.79 7.69 2.2 9.33 4.04 9.7C3.71 9.79 3.35 9.84 2.98 9.84C2.72 9.84 2.46 9.82 2.21 9.77C2.74 11.38 4.23 12.56 6.01 12.6C4.62 13.68 2.87 14.33 0.97 14.33C0.63 14.33 0.31 14.32 0 14.28C1.79 15.44 3.93 16.1 6.23 16.1C13.71 16.1 17.79 9.91 17.79 4.54C17.79 4.36 17.79 4.18 17.78 4.01C18.59 3.44 19.26 2.72 19.82 1.9Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>         
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg width="17" height="17" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24 10.5C24 10.1022 24.158 9.72064 24.4393 9.43934C24.7206 9.15804 25.1022 9 25.5 9C25.8978 9 26.2794 9.15804 26.5607 9.43934C26.842 9.72064 27 10.1022 27 10.5C27 10.8978 26.842 11.2794 26.5607 11.5607C26.2794 11.842 25.8978 12 25.5 12C25.1022 12 24.7206 11.842 24.4393 11.5607C24.158 11.2794 24 10.8978 24 10.5Z" fill="#FFF9F4"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 10.875C16.1103 10.875 14.2981 11.6257 12.9619 12.9619C11.6257 14.2981 10.875 16.1103 10.875 18C10.875 19.8897 11.6257 21.7019 12.9619 23.0381C14.2981 24.3743 16.1103 25.125 18 25.125C19.8897 25.125 21.7019 24.3743 23.0381 23.0381C24.3743 21.7019 25.125 19.8897 25.125 18C25.125 16.1103 24.3743 14.2981 23.0381 12.9619C21.7019 11.6257 19.8897 10.875 18 10.875ZM13.125 18C13.125 16.7071 13.6386 15.4671 14.5529 14.5529C15.4671 13.6386 16.7071 13.125 18 13.125C19.2929 13.125 20.5329 13.6386 21.4471 14.5529C22.3614 15.4671 22.875 16.7071 22.875 18C22.875 19.2929 22.3614 20.5329 21.4471 21.4471C20.5329 22.3614 19.2929 22.875 18 22.875C16.7071 22.875 15.4671 22.3614 14.5529 21.4471C13.6386 20.5329 13.125 19.2929 13.125 18Z" fill="#FFF9F4"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.8871 4.24833C20.6451 3.66722 15.355 3.66722 10.1131 4.24833C7.09508 4.58583 4.65758 6.96333 4.30358 9.99633C3.68168 15.3132 3.68168 20.6845 4.30358 26.0013C4.65758 29.0343 7.09358 31.4118 10.1131 31.7493C15.3551 32.3298 20.6451 32.3298 25.8871 31.7493C28.9051 31.4118 31.3426 29.0343 31.6966 26.0013C32.3186 20.6845 32.3186 15.3132 31.6966 9.99633C31.3426 6.96333 28.9066 4.58583 25.8871 4.24833ZM10.3621 6.48333C15.4385 5.92064 20.5616 5.92064 25.6381 6.48333C27.6331 6.70833 29.2306 8.28183 29.4631 10.2588C30.0645 15.4013 30.0645 20.5964 29.4631 25.7388C29.3428 26.7064 28.8999 27.6052 28.2058 28.29C27.5118 28.9747 26.6072 29.4056 25.6381 29.5128C20.5616 30.0756 15.4385 30.0756 10.3621 29.5128C9.39299 29.4056 8.48836 28.9747 7.79432 28.29C7.10027 27.6052 6.65734 26.7064 6.53708 25.7388C5.93566 20.5964 5.93566 15.4013 6.53708 10.2588C6.65734 9.29127 7.10027 8.3925 7.79432 7.70771C8.48836 7.02292 9.39299 6.59059 10.3621 6.48333Z" fill="#FFF9F4"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+        </footer>
+        <div class="line"></div>
     </div>
 
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
