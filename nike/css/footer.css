@@ -12,13 +12,9 @@
     max-width: 100%;
     height: auto;
 }
-.footer__block {
-}
 .footer__block-list {
     display: flex;
     gap: 75px;
-}
-.footer__block-item {
 }
 .footer__block-link {
     color: #051101;
@@ -26,13 +22,14 @@
     font-weight: 500;
     line-height: 1.4;
 }
+.footer__block-link:hover {
+    opacity: .7;
+}
 .socials {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
-}
-.socials__text {
 }
 .s-text {
     color: #051101;
