@@ -37,6 +37,10 @@
     opacity: 1;
     color: var(--accent-color-2);
 }
+.nav__item:last-child:hover {
+    opacity: 1;
+    color: var(--accent-color-2);
+}
 .nav__link {
     display: block;
     padding: 5px 0;

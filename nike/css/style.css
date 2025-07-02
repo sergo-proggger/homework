@@ -575,8 +575,12 @@
     .testimonials__wrapper {
         width: 480px;
     }
+    .testimonials__inner {
+    margin-left: 104px;
+    gap: 89px;
+}
     .testimonials__bg {
-        transform: translate(545px, 37px);
+        display: none;
     }
     .tesimonials__buttons {
         margin-left: 50px;
@@ -667,9 +671,10 @@
         left: 52%;
     }
     /* ==================== */
-    .testimonials__bg {
-        display: none;
+    .testimonials__inner {
+        margin-left: 35px;
     }
+
     /* ===================== */
     .footer__block-list {
         gap: 50px;
@@ -727,6 +732,10 @@
         font-size: 32px;
     }
     /* ========================== */
+    .testimonials__inner {
+        margin-left: -21px;
+        gap: 63px;
+    }
     .tesimonials__buttons  {
         margin-left: 147px;
     }
@@ -867,7 +876,8 @@
     }
     /* ======================== */
     .testimonials__inner {
-        gap: 55px;
+        gap: 80px;
+        margin-left: 7px;
     }
     .tesimonials__buttons {
         margin-left: -6px;
@@ -955,6 +965,10 @@
     }
 }
 @media (max-width: 700px) {
+        .header__top-inner {
+            margin-left: 35px;
+            gap: 388px;
+        }
         .texts {
             font-size: 14px;
             text-align: center;
@@ -998,7 +1012,8 @@
         max-width: 500px;
     }
     .header__top-inner {
-        gap: 387px;
+        gap: 359px;
+        margin-left: 4px;
     }
     .hero__shoes-types {
         margin-right: auto;
@@ -1170,8 +1185,9 @@
         left: 53%;
     }
     /* =========================== */
-    .review__title {
-        font-size: 30px;
+    .train__title {
+        font-size: 23px;
+        margin-bottom: -11px;
     }
     /* ===================== */
     .testimonials__slider {
@@ -1186,6 +1202,9 @@
     /* ======================= */
     .review__inner {
         margin-left: -8px;
+    }
+    .review__title {
+        font-size: 30px;
     }
 }
 @media (max-width: 500px) {
@@ -1209,7 +1228,8 @@
         gap: 14px;
     }
     .header__top-inner {
-        gap: 244px;
+        gap: 220px;
+        margin-left: 25px;
     }
     .buttons {
         gap: 22px;
@@ -1274,6 +1294,8 @@
     }
     .header__top-inner {
         max-width: 300px;
+        gap: 166px;
+        margin-left: 8px;
     }
     .hero__sentence {
         font-size: 20px;
@@ -1326,11 +1348,16 @@
     .play-button {
         top: 21%;
         left: 52%;
+        width: 76px;
+        height: 76px;
     }
     /* ============================ */
+    .train__inner {
+        margin-bottom: -3px;
+    }
     .train__title {
         font-size: 17px;
-        margin-bottom: 15px;
+        margin-bottom: -13px;
     }
     .train__text {
         font-size: 12px;
