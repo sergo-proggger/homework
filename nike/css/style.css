@@ -8,6 +8,7 @@
 :root {
     --accent-color: #5cbe3a;
     --accent-color-2: #051101;
+    --transition: all .3s;
 
 }
 .body {
@@ -128,6 +129,7 @@
     height: 49px;
     margin-bottom: 60px;
     align-self: center;
+    transition: all .4s;
 }
 .products__button:hover {
     border-color: #5cbe3a;
@@ -315,7 +317,22 @@
     margin-bottom: 35px;
 }
 .review__button {
+    border-radius: 4px;
+    background: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    max-width: 163px;
+    padding: 15px 30px 15px 30px;
+    height: 49px;
+    color: #ffffff;
+    z-index: 51;
+    transition: all .3s;
     margin-bottom: 84px;
+}
+.review__button:hover {
+    color: #000000;
 }
 /* ================================================== */
 .testimonials__inner {
@@ -340,6 +357,13 @@
 .testimonials__next {
     background: transparent;
     cursor: pointer;
+    transition: all .4s;
+}
+.testimonials__prev:hover {
+    background: #b4e1a5;
+}
+.testimonials__next:hover {
+    background: #b4e1a5;
 }
 .testimonials__button {
     display: flex;
@@ -352,6 +376,13 @@
     width: 195px;
     height: 61px;
     margin-bottom: 50px;
+    transition: all .4s;
+}
+.testimonials__button:hover {
+    border-color: #5cbe3a;
+}
+.testimonials__button.testimonials__button-text:hover {
+    color: #5cbe3a;
 }
 .testimonials__button-text {
     color: var(--accent-color);
@@ -361,20 +392,6 @@
     line-height: 1.4;
     text-align: left;
     white-space: nowrap;
-}
-.tesimonials__buttons2 {
-}
-.testimonials__nav2 {
-}
-.testimonials__prev2 {
-}
-.testimonials__next2 {
-}
-.testimonials__button2 {
-    display: none;
-}
-.testimonials__button-text2 {
-    display: none;
 }
 .testimonials__pagination2 {
     display: none;
