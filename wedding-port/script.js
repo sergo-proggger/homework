@@ -211,3 +211,128 @@
 
     console.log('✅ Все скрипты загружены!');
 })();
+
+(function() {
+    
+    function initSlider(trackSelector, prevSelector, nextSelector, dotsSelector) {
+        var track = document.querySelector(trackSelector);
+        var prevBtn = document.querySelector(prevSelector);
+        var nextBtn = document.querySelector(nextSelector);
+        var dotsContainer = document.querySelector(dotsSelector);
+        
+        if (!track) return;
+        
+        var slides = track.querySelectorAll('.slide');
+        var total = slides.length;
+        var current = 0;
+        var isTransitioning = false;
+        
+        // Создаём точки
+        if (dotsContainer) {
+            dotsContainer.innerHTML = '';
+            for (var i = 0; i < total; i++) {
+                var dot = document.createElement('button');
+                dot.className = 'dot' + (i === 0 ? ' active' : '');
+                dot.setAttribute('aria-label', 'Перейти к слайду ' + (i + 1));
+                (function(index) {
+                    dot.addEventListener('click', function() {
+                        if (!isTransitioning) goTo(index);
+                    });
+                })(i);
+                dotsContainer.appendChild(dot);
+            }
+        }
+        
+        var dots = dotsContainer ? dotsContainer.querySelectorAll('.dot') : [];
+        
+        function goTo(index) {
+            if (isTransitioning) return;
+            if (index < 0) index = total - 1;
+            if (index >= total) index = 0;
+            current = index;
+            
+            isTransitioning = true;
+            track.style.transform = 'translateX(-' + (current * 100) + '%)';
+            
+            if (dots.length) {
+                for (var i = 0; i < dots.length; i++) {
+                    dots[i].classList.toggle('active', i === current);
+                }
+            }
+            
+            setTimeout(function() {
+                isTransitioning = false;
+            }, 500);
+        }
+        
+        function nextSlide() {
+            if (!isTransitioning) goTo(current + 1);
+        }
+        
+        function prevSlide() {
+            if (!isTransitioning) goTo(current - 1);
+        }
+        
+        if (prevBtn) {
+            prevBtn.addEventListener('click', prevSlide);
+        }
+        if (nextBtn) {
+            nextBtn.addEventListener('click', nextSlide);
+        }
+        
+        // Клавиатура
+        document.addEventListener('keydown', function(e) {
+            var container = track.closest('.slider-container');
+            if (!container) return;
+            if (document.activeElement && document.activeElement.tagName === 'INPUT') return;
+            if (e.key === 'ArrowLeft') prevSlide();
+            if (e.key === 'ArrowRight') nextSlide();
+        });
+        
+        // Свайп на мобильных
+        var startX = 0;
+        var isDragging = false;
+        
+        track.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+        }, { passive: true });
+        
+        track.addEventListener('touchend', function(e) {
+            if (!isDragging) return;
+            isDragging = false;
+            var endX = e.changedTouches[0].clientX;
+            var diff = startX - endX;
+            if (Math.abs(diff) > 30) {
+                if (diff > 0) nextSlide();
+                else prevSlide();
+            }
+        }, { passive: true });
+        
+        // Обновление при ресайзе
+        var resizeTimer;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+                goTo(current);
+            }, 100);
+        });
+        
+        console.log('✅ Слайдер инициализирован:', trackSelector);
+    }
+    
+    function initAll() {
+        initSlider('.girls-track', '.girls-prev', '.girls-next', '.girls-dots');
+        initSlider('.guys-track', '.guys-prev', '.guys-next', '.guys-dots');
+        console.log('🎉 Все слайдеры Dress Code инициализированы!');
+    }
+    
+    if (document.readyState === 'complete') {
+        setTimeout(initAll, 150);
+    } else {
+        window.addEventListener('load', function() {
+            setTimeout(initAll, 150);
+        });
+    }
+    
+})();
