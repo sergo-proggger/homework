@@ -549,6 +549,239 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   13. БЛОК 9: DRESS CODE
+   ============================================ */
+
+.dresscode-section {
+    padding: 40px 0 30px;
+    background: #FBF6F0;
+    text-align: center;
+    width: 100%;
+}
+
+.dresscode-top-line,
+.dresscode-bottom-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: 160px;
+    margin: 0 auto 10px;
+}
+
+.dresscode-bottom-line {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.dresscode-top-line .line-left,
+.dresscode-top-line .line-right,
+.dresscode-bottom-line .line-left,
+.dresscode-bottom-line .line-right {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #B8A890, transparent);
+}
+
+.dresscode-top-line .diamond,
+.dresscode-bottom-line .diamond {
+    color: #B8A890;
+    font-size: 10px;
+    opacity: 0.6;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+.dresscode-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    color: #4A3F35;
+    margin-bottom: 8px;
+}
+
+.dresscode-text {
+    max-width: 550px;
+    margin: 0 auto 6px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.6;
+    color: #6B5F55;
+    letter-spacing: 0.3px;
+}
+
+.dresscode-colors {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 12px 0 20px;
+}
+
+.dresscode-colors span {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #E8E0D8;
+    display: block;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.dresscode-colors span:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dresscode-sliders {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.dresscode-slider-wrapper {
+    background: #FFFFFF;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1.5px solid #B8A890;
+    box-shadow: 0 0 0 4px rgba(184, 168, 144, 0.08), 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.dresscode-slider-wrapper:hover {
+    border-color: #A89880;
+    box-shadow: 0 0 0 6px rgba(184, 168, 144, 0.12), 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.dresscode-slider-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+    color: #4A3F35;
+    padding: 14px 14px 10px 14px;
+    margin: 0;
+    letter-spacing: 2px;
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(184, 168, 144, 0.2);
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    background: #F5F0EB;
+}
+
+.slider-container::before,
+.slider-container::after {
+    display: none !important;
+}
+
+.slider-track {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform;
+}
+
+.slide {
+    min-width: 100%;
+    user-select: none;
+    overflow: hidden;
+    background: #F5F0EB;
+    border: none;
+    outline: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
+    border: none;
+    outline: none;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1.5px solid #B8A890;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06), 0 0 0 3px rgba(184, 168, 144, 0.08);
+    color: #4A3F35;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+    z-index: 10;
+    padding: 0;
+    line-height: 1;
+}
+
+.slider-btn:hover {
+    background: #B8A890;
+    border-color: #B8A890;
+    color: #fff;
+    transform: translateY(-50%) scale(1.08);
+    box-shadow: 0 4px 25px rgba(184, 168, 144, 0.25);
+}
+
+.slider-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.girls-prev, .guys-prev { left: 8px; }
+.girls-next, .guys-next { right: 8px; }
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 0 6px 0;
+    background: #FFFFFF;
+}
+
+.slider-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(74, 63, 53, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(74, 63, 53, 0.08);
+    padding: 0;
+}
+
+.slider-dots .dot:hover {
+    background: rgba(74, 63, 53, 0.4);
+    transform: scale(1.15);
+}
+
+.slider-dots .dot.active {
+    background: #4A3F35;
+    border-color: #4A3F35;
+    width: 28px;
+    height: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 18px rgba(74, 63, 53, 0.15);
+}
+
+/* ============================================
    HISTORY
    ============================================ */
 
@@ -1031,6 +1264,12 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: row;
         gap: 15px;
     }
+   .dresscode-sliders {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 420px;
+        margin: 0 auto;
+    }
     .date-line-top,
     .date-line-bottom {
         display: none;
@@ -1089,6 +1328,79 @@ h1, h2, h3, h4, h5, h6 {
     .calendar-heart-day .heart-svg {
         width: 54px;
         height: 54px;
+    }
+   /* DRESS CODE */
+    .dresscode-section {
+        padding: 30px 0 20px;
+    }
+    
+    .dresscode-title {
+        font-size: 28px;
+        letter-spacing: 3px;
+        padding: 0 10px;
+    }
+    
+    .dresscode-text {
+        font-size: 14px;
+        padding: 0 12px;
+        line-height: 1.5;
+    }
+    
+    .dresscode-colors span {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .dresscode-colors {
+        gap: 8px;
+        margin: 10px 0 15px;
+    }
+    
+    .dresscode-sliders {
+        gap: 16px;
+        padding: 0 5px;
+    }
+    
+    .dresscode-slider-wrapper {
+        border-radius: 12px;
+        border-width: 1px;
+    }
+    
+    .dresscode-slider-title {
+        font-size: 15px;
+        padding: 12px 10px 8px 10px;
+    }
+    
+    .slider-container {
+        max-height: 350px;
+    }
+    
+    .slide img {
+        max-height: 350px;
+    }
+    
+    .slider-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+    
+    .girls-prev, .guys-prev { left: 6px; }
+    .girls-next, .guys-next { right: 6px; }
+    
+    .slider-dots {
+        gap: 6px;
+        padding: 10px 0 4px 0;
+    }
+    
+    .slider-dots .dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .slider-dots .dot.active {
+        width: 20px;
+        height: 8px;
     }
     .timer-date-absolute .date-day {
         font-size: 48px;
@@ -2942,6 +3254,19 @@ h1, h2, h3, h4, h5, h6 {
         .moments-title {
         font-size: 28px;
         letter-spacing: 3px;
+    }
+
+   .dresscode-title {
+        font-size: 24px;
+    }
+    
+    .dresscode-text {
+        font-size: 13px;
+    }
+    
+    .dresscode-colors span {
+        width: 26px;
+        height: 26px;
     }
     
     .moments-photo.small {
