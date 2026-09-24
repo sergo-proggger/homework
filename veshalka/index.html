@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Шоу начинается с вешалки — тестовый блок</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stalinist+One&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="show-block" id="show-block">
+
+  <!-- декоративный фон: небо, звёзды, силуэты домов (кадры сняты с макета в Figma) -->
+  <div class="show-block__bg" aria-hidden="true">
+    <div class="show-block__stars" id="show-block-stars"></div>
+  </div>
+
+  <div class="show-block__inner">
+    <h2 class="show-block__title">Шоу начинается<br class="show-block__title-break"> с вешалки</h2>
+
+    <div class="show-block__media">
+      <button class="show-block__play" id="show-block-play" type="button" aria-label="Смотреть видео" data-video-src="https://www.youtube.com/embed/aqz-KE-bpKQ?autoplay=1&mute=1&rel=0">
+        <img
+          class="show-block__poster"
+          src="assets/poster.jpg"
+          alt="Кадр закулисья шоу: костюм персонажа среди воздушных шаров"
+          width="1046"
+          height="782"
+          loading="lazy"
+        >
+        <span class="show-block__play-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 7.5v9l7-4.5-7-4.5z" fill="currentColor"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
